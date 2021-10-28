@@ -29,7 +29,8 @@
     "build:components": "componentsjs-generator -s src -c dist/components -i .componentsignore --typeScopedContexts",
     "build:ts": "tsc",
     "lint": "eslint . --cache",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "start": "community-solid-server -c config/example.json -m ."
   },
   "peerDependencies": {
     "@solid/community-server": "^2.0.0"

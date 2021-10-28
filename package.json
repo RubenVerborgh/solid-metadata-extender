@@ -1,0 +1,51 @@
+{
+  "name": "@solid/community-server-metadata-extender",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Ruben Verborgh <ruben@verborgh.org> (https://ruben.verborgh.org/)",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": "git@github.com:RubenVerborgh/solid-metadata-extender.git",
+  "bugs": {
+    "url": "https://github.com/RubenVerborgh/solid-metadata-extender/issues"
+  },
+  "homepage": "https://github.com/RubenVerborgh/solid-metadata-extender#readme",
+  "files": [
+    "config",
+    "dist"
+  ],
+  "lsd:module": "https://linkedsoftwaredependencies.org/bundles/npm/solid/community-server-metadata-extender",
+  "lsd:components": "dist/components/components.jsonld",
+  "lsd:contexts": {
+    "https://linkedsoftwaredependencies.org/bundles/npm/@solid/community-server-metadata-extender/^1.0.0/components/context.jsonld": "dist/components/context.jsonld"
+  },
+  "lsd:importPaths": {
+    "https://linkedsoftwaredependencies.org/bundles/npm/@solid/community-server-metadata-extender/^1.0.0/components/": "dist/components/",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@solid/community-server-metadata-extender/^1.0.0/config/": "config/",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@solid/community-server-metadata-extender/^1.0.0/dist/": "dist/"
+  },
+  "scripts": {
+    "build": "npm run build:ts && npm run build:components",
+    "build:components": "componentsjs-generator -s src -c dist/components -i .componentsignore --typeScopedContexts",
+    "build:ts": "tsc",
+    "lint": "eslint . --cache",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "@solid/community-server": "^2.0.0"
+  },
+  "devDependencies": {
+    "@solid/community-server": "github:solid/community-server",
+    "@tsconfig/node14": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "componentsjs-generator": "^2.6.1",
+    "eslint": "^7.32.0",
+    "eslint-config-es": "^3.30.15",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-tsdoc": "^0.2.14",
+    "eslint-plugin-unused-imports": "^1.1.5",
+    "husky": "^7.0.4",
+    "typescript": "^4.4.4"
+  }
+}

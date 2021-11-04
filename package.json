@@ -48,5 +48,8 @@
     "eslint-plugin-unused-imports": "^1.1.5",
     "husky": "^7.0.4",
     "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "rdf-parse": "^1.9.1"
   }
 }

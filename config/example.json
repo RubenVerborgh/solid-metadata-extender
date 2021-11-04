@@ -1,7 +1,7 @@
 {
   "@context": [
     "https://linkedsoftwaredependencies.org/bundles/npm/@solid/community-server/^2.0.0/components/context.jsonld",
-    "https://linkedsoftwaredependencies.org/bundles/npm/@solid/community-server-metadata-extender/^1.0.0/components/context.jsonld"
+    "https://linkedsoftwaredependencies.org/bundles/npm/@solid/community-server-metadata-extender/^2.0.0/components/context.jsonld"
   ],
   "import": [
     "files-scs:config/app/main/default.json",
@@ -54,6 +54,12 @@
       "comment": "Extend files with extra metadata.",
       "@id": "urn:solid-server:default:MetadataExtender",
       "@type": "MetadataExtender",
+      "@type": "MetadataExtender",
+      "options_dctFormat":   true,
+      "options_dctModified": true,
+      "options_ianaType":    true,
+      "options_statMtime":   true,
+      "options_statSize":    true,
       "source": { "@id": "urn:solid-server:default:FileDataAccessor" }
     }
   ]

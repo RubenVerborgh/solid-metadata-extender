@@ -1,6 +1,6 @@
 {
   "name": "@solid/community-server-metadata-extender",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "license": "MIT",
   "author": "Ruben Verborgh <ruben@verborgh.org> (https://ruben.verborgh.org/)",
   "main": "./dist/index.js",

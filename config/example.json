@@ -57,6 +57,7 @@
       "@type": "MetadataExtender",
       "options_dctFormat":   true,
       "options_dctModified": true,
+      "options_rdfSource":   true,
       "options_ianaType":    true,
       "options_statMtime":   true,
       "options_statSize":    true,
